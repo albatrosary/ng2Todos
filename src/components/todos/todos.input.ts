@@ -1,25 +1,18 @@
 import {Component} from '@angular/core';
-import {REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, Validators} from '@angular/forms';
+import {REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, Validators, NgForm} from '@angular/forms';
 
-import {TodoStore} from '../../share';
+import {TodoStore, TODO_STORE} from '../../share';
 
 @Component({
   selector: 'todos-input',
   template: `
-    <form [formGroup]="todoForm">
-      <input type="text" formControlName="title">
-      <textarea formControlName="desc"></textarea>
+    <form (ngSubmit)="onClick()" #todoForm="ngForm">
+      <input [(ngModel)]="todo.title" name="title" required>
+      <textarea [(ngModel)]="todo.desc" name="desc" required></textarea>
+      <button type=submit [disabled]="!todoForm.form.valid">登録</button>
     </form>
-    <button (click)="onClick()">登録</button>
     `,
-  styles: [`
-    input.ng-invalid.ng-dirty {
-      border-color: #ff0000;
-    }
-    textarea.ng-invalid.ng-dirty {
-      border-color: #ff0000;
-    }
-    `,
+  styles: [
     `
     input {
       width: 100%;
@@ -33,22 +26,21 @@ import {TodoStore} from '../../share';
 })
 export default class TodosInputComponent {
 
-  private todoForm = new FormGroup({
-    title: new FormControl('', [
-      Validators.required,
-      Validators.minLength(3)
-    ]),
-    desc: new FormControl('', [
-      Validators.required,
-      Validators.minLength(10)
-    ])
-  });
-
-  constructor (private todoStore: TodoStore) {}
+  private todo: TODO_STORE;
+  
+  constructor (private todoStore: TodoStore) {
+    this.todo = {
+      title: '',
+      desc: ''
+    }
+  }
 
   public onClick() {
-    if (this.todoForm.status === 'VALID') {
-      this.todoStore.add(this.todoForm.value);
-    }
+    this.todoStore.add(
+      this.todo.title,
+      this.todo.desc
+    );
+    this.todo.title = '';
+    this.todo.desc = '';
   }
 }

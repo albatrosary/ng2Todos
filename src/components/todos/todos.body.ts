@@ -9,7 +9,8 @@ import {TodoStore, TODO_STORE} from '../../share';
   template: `
     <todos-detail *ngFor="let todo of todos; let i = index"
       [list-no]="i"
-      [todo-store]="todo"
+      todo-title="{{todo.title}}"
+      todo-desc="{{todo.desc}}"
       (on-delete)="onDelete(i)">
     </todos-detail>
     `,

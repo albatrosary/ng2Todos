@@ -6,8 +6,8 @@ import {TODO_STORE} from '../../share'
   template: `
     <div ngClass="list-no">{{listNo+1}}</div>
     <div>
-      <p>{{todoStore.title}}</p>
-      <pre>{{todoStore.desc}}</pre>
+      <p>{{title}}</p>
+      <pre>{{desc}}</pre>
       <button (click)="onClick($event)">削除</button>
     </div>
     `,
@@ -43,9 +43,12 @@ export default class TodosDetailComponent {
   @Input('list-no')
   private listNo: number;
 
-  @Input('todo-store')
-  private todoStore: TODO_STORE;
+  @Input('todo-title')
+  private title: string;
   
+  @Input('todo-desc')
+  private desc: string;
+
   @Output('on-delete')
   private onDelete = new EventEmitter();
   

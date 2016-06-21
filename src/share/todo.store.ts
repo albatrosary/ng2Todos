@@ -10,7 +10,14 @@ export class TodoStore {
     this.todos.splice(index, 1);
   }
   
-  public add(todo: TODO_STORE): void {
+  public add(
+    title: string,
+    desc: string
+  ): void {
+    let todo = {
+      title: title,
+      desc: desc
+    }
     this.todos.push(todo);
   }
   
