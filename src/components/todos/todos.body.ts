@@ -14,9 +14,6 @@ import {TodosStore, TODOS_STORE} from '../../share';
       (on-delete)="onDelete(i)">
     </todos-detail>
     `,
-  styles: [`
-    todos-detail {
-    }`],
   directives: [TodosDetailComponent]
 })
 export class TodosBodyComponent implements OnInit  {

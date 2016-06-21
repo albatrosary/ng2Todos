@@ -3,7 +3,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 @Component({
   selector: 'todos-detail',
   template: `
-    <h3>{{i+1}}</h3>
+    <div ngClass="no">{{i+1}}</div>
     <div>
       <p>{{title}}</p>
       <pre>{{desc}}</pre>
@@ -21,18 +21,19 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
       overflow : hidden;
     }`
     ,
-    `h3 {
-      float: left;
-      display: block;
+    `.no {
+      text-align: center;
       margin: 5px 5px 5px 5px;
       width: 100px;
-      min-height: 100px;
-      text-align: center;
+      height: 100px;
       background-color: #4e5d5f;
       color: #ffffff;
     }`,
     `div {
       float: left;
+    }`,
+    `button {
+      background-color: #e8345a;
     }`
   ]
 })

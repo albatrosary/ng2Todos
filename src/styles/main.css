@@ -9,3 +9,22 @@ body {
   color: #333;
   background-color: #fff;
 }
+button {
+  color: #fff;
+  background-color: #1e88e5;
+  display: inline-block;
+  padding: 6px 24px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 2px;
+}
+p {
+  margin: 5px 0 5px 0;
+}
