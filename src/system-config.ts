@@ -20,6 +20,6 @@ System.config({
 
     // app specific barrels.
     'components': { main: 'index' },
-    'share': { main: 'index' }
+    'components/todos/shared': { main: 'index' }
   },
 });

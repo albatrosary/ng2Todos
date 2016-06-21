@@ -1,5 +1,5 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {Todo} from '../../share'
+import {Todo} from './shared'
 
 @Component({
   selector: 'todos-detail',
