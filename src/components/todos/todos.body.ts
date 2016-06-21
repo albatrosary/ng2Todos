@@ -22,7 +22,7 @@ export class TodosBodyComponent implements OnInit {
   constructor (private todoStore: TodoStore) {}
 
   public ngOnInit () {
-    this.todos = this.todoStore.getList();
+    this.todos = this.todoStore.list;
   }
 
   public onDelete(index) {

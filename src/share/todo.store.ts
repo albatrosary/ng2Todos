@@ -14,7 +14,7 @@ export class TodoStore {
     this.todolist.push(todo);
   }
   
-  public getList(): TODO_STORE[] {
+  public get list(): TODO_STORE[] {
     return this.todolist;
   }
 }

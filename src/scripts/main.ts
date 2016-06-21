@@ -7,6 +7,6 @@ import {TodosComponent} from '../components'
 enableProdMode();
 
 bootstrap(TodosComponent, [
-   disableDeprecatedForms(),
-   provideForms()
+  disableDeprecatedForms(),
+  provideForms()
 ])
