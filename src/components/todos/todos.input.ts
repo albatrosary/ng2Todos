@@ -1,5 +1,4 @@
-import {Component} from '@angular/core';
-import {REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, Validators, NgForm} from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
 
 import {TodoStore, Todo} from '../../share';
 
@@ -21,21 +20,20 @@ import {TodoStore, Todo} from '../../share';
       width: 100%;
       height: 7em;
     }
-  `],
-  directives: [REACTIVE_FORM_DIRECTIVES]
+  `]
 })
-export default class TodosInputComponent {
+export default class TodosInputComponent implements OnInit {
 
   private todo: Todo;
   
-  constructor (private todoStore: TodoStore) {
+  constructor (private todoStore: TodoStore) {}
+
+  ngOnInit() {
     this.todo = new Todo;
   }
 
   public onClick() {
-    this.todoStore.add(
-      this.todo
-    );
+    this.todoStore.add(this.todo);
     this.todo = new Todo;
   }
 }
