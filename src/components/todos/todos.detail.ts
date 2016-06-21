@@ -13,7 +13,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
   styles: [
     `:host {
       display: block;
-      border:#0000ff solid 1px;
+      border:#4e5d5f solid 2px;
       margin: 5px 0 5px 0;
       padding: 5px 0 5px 0;
       width: 100%;
