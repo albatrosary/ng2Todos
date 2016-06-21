@@ -1,13 +1,14 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
+import {TODOS_STORE} from '../../share'
 
 @Component({
   selector: 'todos-detail',
   template: `
     <div ngClass="no">{{i+1}}</div>
     <div>
-      <p>{{title}}</p>
-      <pre>{{desc}}</pre>
-      <button (click)="onClick($event)" aria-label="Remove">削除</button>
+      <p>{{todos.title}}</p>
+      <pre>{{todos.desc}}</pre>
+      <button (click)="onClick($event)">削除</button>
     </div>
     `,
   styles: [
@@ -42,11 +43,8 @@ export class TodosDetailComponent {
   @Input('no')
   private i: number;
 
-  @Input()
-  private title: string;
-  
-  @Input()
-  private desc: string;
+  @Input('todos-store')
+  private todos: TODOS_STORE;
   
   @Output('on-delete')
   private onDelete = new EventEmitter();

@@ -15,7 +15,6 @@ export class TodosStore {
   
   public add(todo: TODOS_STORE): void {
     this.todolist.push(todo);
-    console.log(this.todolist);
   }
   
   public getList(): TODOS_STORE[] {
