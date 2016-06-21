@@ -7,8 +7,8 @@ import {TodoStore, TODO_STORE} from '../../share';
   selector: 'todos-input',
   template: `
     <form (ngSubmit)="onClick()" #todoForm="ngForm">
-      <input [(ngModel)]="todo.title" name="title" required>
-      <textarea [(ngModel)]="todo.desc" name="desc" required></textarea>
+      <input [(ngModel)]="todo.title" name="title" required placeholder="title">
+      <textarea [(ngModel)]="todo.desc" name="desc" required placeholder="desc"></textarea>
       <button type=submit [disabled]="!todoForm.form.valid">登録</button>
     </form>
     `,
@@ -29,19 +29,13 @@ export default class TodosInputComponent {
   private todo: TODO_STORE;
   
   constructor (private todoStore: TodoStore) {
-    this.todo = {
-      title: '',
-      desc: ''
-    }
+    this.todo = new TODO_STORE;
   }
 
   public onClick() {
     this.todoStore.add(
       this.todo
     );
-    this.todo = {
-      title: '',
-      desc: ''
-    }
+    this.todo = new TODO_STORE;
   }
 }
