@@ -1,4 +1,4 @@
-export class TODO_STORE {
+export class Todo {
   title: string;
   desc: string;
 }

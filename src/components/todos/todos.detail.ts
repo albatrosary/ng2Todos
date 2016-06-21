@@ -1,5 +1,5 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {TODO_STORE} from '../../share'
+import {Todo} from '../../share'
 
 @Component({
   selector: 'todos-detail',
@@ -44,7 +44,7 @@ export default class TodosDetailComponent {
   private listNo: number;
 
   @Input('todo-data')
-  private todo: TODO_STORE;
+  private todo: Todo;
 
   @Output('on-delete')
   private onDelete = new EventEmitter();

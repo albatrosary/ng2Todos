@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, Validators, NgForm} from '@angular/forms';
 
-import {TodoStore, TODO_STORE} from '../../share';
+import {TodoStore, Todo} from '../../share';
 
 @Component({
   selector: 'todos-input',
@@ -26,16 +26,16 @@ import {TodoStore, TODO_STORE} from '../../share';
 })
 export default class TodosInputComponent {
 
-  private todo: TODO_STORE;
+  private todo: Todo;
   
   constructor (private todoStore: TodoStore) {
-    this.todo = new TODO_STORE;
+    this.todo = new Todo;
   }
 
   public onClick() {
     this.todoStore.add(
       this.todo
     );
-    this.todo = new TODO_STORE;
+    this.todo = new Todo;
   }
 }

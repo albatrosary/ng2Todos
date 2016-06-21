@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import TodosDetailComponent from './todos.detail'; 
 
-import {TodoStore, TODO_STORE} from '../../share';
+import {TodoStore, Todo} from '../../share';
 
 @Component({
   selector: 'todos-body',
@@ -17,7 +17,7 @@ import {TodoStore, TODO_STORE} from '../../share';
 })
 export default class TodosBodyComponent implements OnInit {
 
-  private todos: TODO_STORE[];
+  private todos: Todo[];
 
   constructor (private todoStore: TodoStore) {}
 
