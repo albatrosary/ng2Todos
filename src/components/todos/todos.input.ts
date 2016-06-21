@@ -37,10 +37,11 @@ export default class TodosInputComponent {
 
   public onClick() {
     this.todoStore.add(
-      this.todo.title,
-      this.todo.desc
+      this.todo
     );
-    this.todo.title = '';
-    this.todo.desc = '';
+    this.todo = {
+      title: '',
+      desc: ''
+    }
   }
 }
