@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'todos-detail',
@@ -7,11 +7,9 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
     <p>{{title}}</p>
     <pre>{{desc}}</pre>
     <button class="btn btn-danger" (click)="onClick($event)" aria-label="Remove">X</button>
-    `,
-    styles: [
-    ``]
+    `
 })
-export class TodosDetailComponent implements OnInit  {
+export class TodosDetailComponent {
   @Input('no')
   private i: number;
 
@@ -26,9 +24,5 @@ export class TodosDetailComponent implements OnInit  {
   
   onClick($event): void {
     this.onDelete.emit($event);
-  }
-
-  ngOnInit () {
-
   }
 }

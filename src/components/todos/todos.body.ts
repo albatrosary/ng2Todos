@@ -14,24 +14,23 @@ import {TodosStore, TODOS_STORE} from '../../share';
       (on-delete)="onDelete(i)">
     </todos-detail>
     `,
-    styles: [`
+  styles: [`
     todos-detail {
       display: block;
       border:#0000ff solid 1px;
       padding: 1px;
       width: 100%;
     }`],
-    directives: [TodosDetailComponent]
+  directives: [TodosDetailComponent]
 })
 export class TodosBodyComponent implements OnInit  {
 
   todolist: TODOS_STORE[];
 
-  constructor (private todosStore: TodosStore) {
-    this.todolist = this.todosStore.getList();
-  }
+  constructor (private todosStore: TodosStore) {}
 
   ngOnInit () {
+    this.todolist = this.todosStore.getList();
   }
 
   onDelete(index) {

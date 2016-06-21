@@ -1,4 +1,4 @@
-import {Component, OnInit,} from '@angular/core';
+import {Component} from '@angular/core';
 import {REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, Validators} from '@angular/forms';
 
 class Todos {
@@ -48,7 +48,7 @@ class Todos {
     }`],
     directives: [REACTIVE_FORM_DIRECTIVES]
 })
-export class AppComponent implements OnInit  {
+export class AppComponent {
 
   private todoForm = new FormGroup({
     title: new FormControl('' ,
@@ -75,9 +75,5 @@ export class AppComponent implements OnInit  {
 
   onDelete(index: number) {
     this.todolist.splice(index, 1);
-  }
-
-  ngOnInit () {
-
   }
 }

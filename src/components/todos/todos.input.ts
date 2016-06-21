@@ -1,4 +1,4 @@
-import {Component, OnInit,} from '@angular/core';
+import {Component} from '@angular/core';
 import {REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, Validators} from '@angular/forms';
 
 import {TodosStore} from '../../share';
@@ -31,11 +31,10 @@ import {TodosStore} from '../../share';
     `],
     directives: [REACTIVE_FORM_DIRECTIVES]
 })
-export class TodosInputComponent implements OnInit  {
+export class TodosInputComponent {
 
   private todoForm = new FormGroup({
-    title: new FormControl('' ,
-    [
+    title: new FormControl('' , [
       Validators.required,
       Validators.minLength(3)
     ]),
@@ -51,13 +50,5 @@ export class TodosInputComponent implements OnInit  {
     if (this.todoForm.status === 'VALID') {
       this.todosStore.add(this.todoForm.value);
     }
-  }
-
-  onDelete(index: number) {
-    this.todosStore.delete(index);
-  }
-
-  ngOnInit () {
-
   }
 }
