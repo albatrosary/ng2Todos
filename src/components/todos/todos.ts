@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
-import {TodosInputComponent} from './todos.input';
-import {TodosBodyComponent} from './todos.body';
+import TodosInputComponent from './todos.input';
+import TodosBodyComponent from './todos.body';
 
 import {TodoStore} from '../../share';
 

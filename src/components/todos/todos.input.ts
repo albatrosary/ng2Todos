@@ -31,7 +31,7 @@ import {TodoStore} from '../../share';
   `],
   directives: [REACTIVE_FORM_DIRECTIVES]
 })
-export class TodosInputComponent {
+export default class TodosInputComponent {
 
   private todoForm = new FormGroup({
     title: new FormControl('', [
