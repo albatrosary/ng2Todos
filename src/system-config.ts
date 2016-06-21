@@ -5,7 +5,7 @@ System.config({
   map: {
     '@angular': 'node_modules/@angular',
     'rxjs': 'node_modules/rxjs',
-    'scripts/main': 'scripts/main.js',
+    'scripts/main': 'scripts/main.js'
   },
   packages: {
     '@angular/core': { main: 'index' },
@@ -20,6 +20,6 @@ System.config({
 
     // app specific barrels.
     'components': { main: 'index' },
-    'share': { main: 'index' },
+    'share': { main: 'index' }
   },
 });

@@ -34,11 +34,11 @@ import {TodosStore} from '../../share';
 export class TodosInputComponent {
 
   private todoForm = new FormGroup({
-    title: new FormControl('dddddddd', [
+    title: new FormControl('', [
       Validators.required,
       Validators.minLength(3)
     ]),
-    desc: new FormControl('ddddddddddddddddddd', [
+    desc: new FormControl('', [
       Validators.required,
       Validators.minLength(10)
     ])

@@ -23,6 +23,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
     ,
     `.no {
       text-align: center;
+      font-size: 2rem;
       margin: 5px 5px 5px 5px;
       width: 100px;
       height: 100px;
