@@ -12,7 +12,7 @@ import {TodosStore} from '../../share';
     </form>
     <button (click)="onClick()">登録</button>
     `,
-    styles: [`
+  styles: [`
     input.ng-invalid.ng-dirty {
       border-color: #ff0000;
     }
@@ -28,8 +28,8 @@ import {TodosStore} from '../../share';
       width: 100%;
       height: 7em;
     }
-    `],
-    directives: [REACTIVE_FORM_DIRECTIVES]
+  `],
+  directives: [REACTIVE_FORM_DIRECTIVES]
 })
 export class TodosInputComponent {
 
