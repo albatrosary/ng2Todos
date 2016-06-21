@@ -16,10 +16,6 @@ import {TodosStore, TODOS_STORE} from '../../share';
     `,
   styles: [`
     todos-detail {
-      display: block;
-      border:#0000ff solid 1px;
-      padding: 1px;
-      width: 100%;
     }`],
   directives: [TodosDetailComponent]
 })
