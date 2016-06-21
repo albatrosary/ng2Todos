@@ -2,30 +2,30 @@ import {Component, OnInit} from '@angular/core';
 
 import {TodosDetailComponent} from './todos.detail'; 
 
-import {TodosStore, TODOS_STORE} from '../../share';
+import {TodoStore, TODO_STORE} from '../../share';
 
 @Component({
   selector: 'todos-body',
   template: `
-    <todos-detail *ngFor="let item of todolist; let i = index"
+    <todos-detail *ngFor="let todo of todos; let i = index"
       [list-no]=i
-      [todos-store]=item
+      [todo-store]=todo
       (on-delete)="onDelete(i)">
     </todos-detail>
     `,
   directives: [TodosDetailComponent]
 })
-export class TodosBodyComponent implements OnInit  {
+export class TodosBodyComponent implements OnInit {
 
-  private todolist: TODOS_STORE[];
+  private todos: TODO_STORE[];
 
-  constructor (private todosStore: TodosStore) {}
+  constructor (private todoStore: TodoStore) {}
 
   public ngOnInit () {
-    this.todolist = this.todosStore.getList();
+    this.todos = this.todoStore.getList();
   }
 
   public onDelete(index) {
-    this.todosStore.delete(index);
+    this.todoStore.delete(index);
   }
 }

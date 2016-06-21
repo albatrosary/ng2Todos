@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {REACTIVE_FORM_DIRECTIVES, FormControl, FormGroup, Validators} from '@angular/forms';
 
-import {TodosStore} from '../../share';
+import {TodoStore} from '../../share';
 
 @Component({
   selector: 'todos-input',
@@ -44,11 +44,11 @@ export class TodosInputComponent {
     ])
   });
 
-  constructor (private todosStore: TodosStore) {}
+  constructor (private todoStore: TodoStore) {}
 
   public onClick() {
     if (this.todoForm.status === 'VALID') {
-      this.todosStore.add(this.todoForm.value);
+      this.todoStore.add(this.todoForm.value);
     }
   }
 }

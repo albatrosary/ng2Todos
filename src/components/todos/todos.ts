@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 import {TodosInputComponent} from './todos.input';
 import {TodosBodyComponent} from './todos.body';
 
-import {TodosStore} from '../../share';
+import {TodoStore} from '../../share';
 
 @Component({
   selector: 'my-app',
@@ -13,6 +13,6 @@ import {TodosStore} from '../../share';
     <todos-body></todos-body>
   `,
   directives: [TodosInputComponent, TodosBodyComponent],
-  providers: [TodosStore]
+  providers: [TodoStore]
 })
 export class TodosComponent {}

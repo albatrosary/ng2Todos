@@ -1,1 +1,1 @@
-export {TodosStore, TODOS_STORE} from './todos.store';
+export {TodoStore, TODO_STORE} from './todo.store';
