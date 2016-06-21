@@ -4,7 +4,7 @@ import {TODOS_STORE} from '../../share'
 @Component({
   selector: 'todos-detail',
   template: `
-    <div ngClass="no">{{i+1}}</div>
+    <div ngClass="list-no">{{listNo+1}}</div>
     <div>
       <p>{{todos.title}}</p>
       <pre>{{todos.desc}}</pre>
@@ -22,7 +22,7 @@ import {TODOS_STORE} from '../../share'
       overflow : hidden;
     }`
     ,
-    `.no {
+    `.list-no {
       text-align: center;
       font-size: 2rem;
       margin: 5px 5px 5px 5px;
@@ -40,8 +40,8 @@ import {TODOS_STORE} from '../../share'
   ]
 })
 export class TodosDetailComponent {
-  @Input('no')
-  private i: number;
+  @Input('list-no')
+  private listNo: number;
 
   @Input('todos-store')
   private todos: TODOS_STORE;

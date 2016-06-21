@@ -8,7 +8,7 @@ import {TodosStore, TODOS_STORE} from '../../share';
   selector: 'todos-body',
   template: `
     <todos-detail *ngFor="let item of todolist; let i = index"
-      [no]=i
+      [list-no]=i
       [todos-store]=item
       (on-delete)="onDelete(i)">
     </todos-detail>
