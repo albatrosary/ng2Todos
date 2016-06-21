@@ -39,7 +39,7 @@ import {Todo} from '../../share'
     }`
   ]
 })
-export default class TodosDetailComponent {
+export class TodosDetailComponent {
   @Input('list-no')
   private listNo: number;
 

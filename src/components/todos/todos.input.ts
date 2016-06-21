@@ -22,7 +22,7 @@ import {TodoStore, Todo} from '../../share';
     }
   `]
 })
-export default class TodosInputComponent implements OnInit {
+export class TodosInputComponent implements OnInit {
 
   private todo: Todo;
   

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import TodosDetailComponent from './todos.detail'; 
+import {TodosDetailComponent} from './todos.detail'; 
 
 import {TodoStore, Todo} from '../../share';
 
@@ -15,7 +15,7 @@ import {TodoStore, Todo} from '../../share';
     `,
   directives: [TodosDetailComponent]
 })
-export default class TodosBodyComponent implements OnInit {
+export class TodosBodyComponent implements OnInit {
 
   private todos: Todo[];
 
