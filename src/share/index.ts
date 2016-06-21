@@ -1,1 +1,2 @@
-export {TodoStore, TODO_STORE} from './todo.store';
+export {TodoStore} from './todo.store';
+export {TODO_STORE} from './TODO_STORE';

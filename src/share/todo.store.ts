@@ -1,9 +1,6 @@
 import {Injectable} from '@angular/core';
 
-export class TODO_STORE {
-  title: string;
-  desc: string;
-}
+import {TODO_STORE} from './TODO_STORE';
 
 @Injectable()
 export class TodoStore {

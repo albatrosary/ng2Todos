@@ -7,7 +7,7 @@ import {TodoStore} from '../../share';
   selector: 'todos-input',
   template: `
     <form [formGroup]="todoForm">
-      <input type=text formControlName="title">
+      <input type="text" formControlName="title">
       <textarea formControlName="desc"></textarea>
     </form>
     <button (click)="onClick()">登録</button>
