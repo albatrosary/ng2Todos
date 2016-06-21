@@ -51,7 +51,7 @@ export class TodosDetailComponent {
   @Output('on-delete')
   private onDelete = new EventEmitter();
   
-  onClick($event): void {
+  public onClick($event): void {
     this.onDelete.emit($event);
   }
 }

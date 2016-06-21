@@ -18,15 +18,15 @@ import {TodosStore, TODOS_STORE} from '../../share';
 })
 export class TodosBodyComponent implements OnInit  {
 
-  todolist: TODOS_STORE[];
+  private todolist: TODOS_STORE[];
 
   constructor (private todosStore: TodosStore) {}
 
-  ngOnInit () {
+  public ngOnInit () {
     this.todolist = this.todosStore.getList();
   }
 
-  onDelete(index) {
+  public onDelete(index) {
     this.todosStore.delete(index);
   }
 }

@@ -46,7 +46,7 @@ export class TodosInputComponent {
 
   constructor (private todosStore: TodosStore) {}
 
-  onClick() {
+  public onClick() {
     if (this.todoForm.status === 'VALID') {
       this.todosStore.add(this.todoForm.value);
     }
