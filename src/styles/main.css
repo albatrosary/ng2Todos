@@ -1,0 +1,11 @@
+
+html {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
+  background-color: #fff;
+}

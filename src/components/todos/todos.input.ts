@@ -10,7 +10,7 @@ import {TodosStore} from '../../share';
       <input type=text formControlName="title">
       <textarea formControlName="desc"></textarea>
     </form>
-    <button (click)="onClick()">ボタン</button>
+    <button (click)="onClick()">登録</button>
     `,
     styles: [`
     input.ng-invalid.ng-dirty {

@@ -6,7 +6,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
     {{i+1}}
     <p>{{title}}</p>
     <pre>{{desc}}</pre>
-    <button class="btn btn-danger" (click)="onClick($event)" aria-label="Remove">X</button>
+    <button (click)="onClick($event)" aria-label="Remove">削除</button>
     `
 })
 export class TodosDetailComponent {
