@@ -58,3 +58,5 @@ components/step.4/template/todos.input.ts
 * todos.body.ts(5-7)
 * todos.detail.ts(8-10)
 * todos.input.ts(11-14)
+
+コンポーネント化に伴いCSS定義も@Componentへ記載しています（styleUrlsでも記載可能）。
