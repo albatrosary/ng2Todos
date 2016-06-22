@@ -14,4 +14,6 @@ bootstrap(HomeComponent);
 
 通常のプロジェクトではいろいろな人が作っているStarter Kitか[Angular2 CLI](https://cli.angular.io/)、YEOMANなどを利用することで簡単にプロジェクトを開始することが可能です。
 
+> デコレーター「@Component」はこのクラスがAngularコンポーネントであることをAngularに伝えます。
+
 [次のステップ](../step.2)

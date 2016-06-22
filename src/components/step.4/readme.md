@@ -60,3 +60,5 @@ components/step.4/template/todos.input.ts
 * todos.input.ts(11-14)
 
 コンポーネント化に伴いCSS定義も@Componentへ記載しています（styleUrlsでも記載可能）。
+
+尚、コンポーネントスタイルに関しては[こちら](https://github.com/ng-japan/ng2-hands-on-seed/blob/master/docs/component-style.md)を参照願います
