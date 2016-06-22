@@ -5,7 +5,7 @@ import {TodoStore, Todo} from './shared';
 @Component({
   selector: 'todos-input',
   template: `
-    <form (ngSubmit)="onClick()" #todoForm="ngForm">
+    <form (ngSubmit)="onSubmit()" #todoForm="ngForm">
       <input [(ngModel)]="todo.title" name="title" required placeholder="title">
       <textarea [(ngModel)]="todo.desc" name="desc" required placeholder="desc"></textarea>
       <button type=submit [disabled]="!todoForm.form.valid">登録</button>
@@ -34,7 +34,7 @@ export class TodosInputComponent
     this.todo = new Todo;
   }
 
-  public onClick(): void {
+  public onSubmit(): void {
     this.todoStore.add(this.todo);
     this.todo = new Todo;
   }
