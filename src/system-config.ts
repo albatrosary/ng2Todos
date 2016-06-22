@@ -13,13 +13,12 @@ System.config({
     '@angular/compiler': { main: 'index' },
     '@angular/platform-browser': { main: 'index' },
     '@angular/platform-browser-dynamic': { main: 'index' },
-    '@angular/forms': { main: 'index' },
 
     // thirdparty barrels.
     'rxjs': { main: 'Rx' },
 
     // app specific barrels.
     'components': { main: 'index' },
-    'components/todos/shared': { main: 'index' }
+    'shared': { main: 'index' }
   },
 });

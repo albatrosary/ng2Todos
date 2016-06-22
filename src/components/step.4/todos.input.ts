@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {TodoStore, Todo} from './shared';
+import {TodoStore, Todo} from '../../shared';
 
 @Component({
   selector: 'todos-input',

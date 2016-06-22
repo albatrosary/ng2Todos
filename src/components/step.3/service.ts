@@ -1,9 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-class Todo {
-  title: string;
-  desc: string;
-}
+import {TodoStore, Todo} from '../../shared';
 
 @Component({
   selector: 'my-app',
@@ -25,30 +22,30 @@ class Todo {
       </div>
     </div>
     `,
-    styleUrls: ['components/app/app.css']
+    styleUrls: ['components/step.2/app.css'],
+    providers: [TodoStore]
 })
-export class AppComponent
+export class ServiceComponent
   implements OnInit {
 
   private todo: Todo;
   private todos: Todo[];
 
-  constructor () {
-    this.todo = new Todo;
-    this.todos = [];
-  }
+  constructor (
+    private todoStore: TodoStore
+  ) {}
 
   ngOnInit(): void {
     this.todo = new Todo;
+    this.todos = this.todoStore.list;
   }
 
   public onSubmit(): void {
-    console.log('onSubmt');
-    this.todos.push(this.todo);
+    this.todoStore.add(this.todo);
     this.todo = new Todo;
   }
 
   public onDelete(index: number): void {
-    this.todos.splice(index, 1);
+    this.todoStore.delete(index);
   }
 }

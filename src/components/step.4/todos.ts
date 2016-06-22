@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 import {TodosInputComponent} from './todos.input';
 import {TodosBodyComponent} from './todos.body';
 
-import {TodoStore} from './shared';
+import {TodoStore} from '../../shared';
 
 @Component({
   selector: 'my-app',
