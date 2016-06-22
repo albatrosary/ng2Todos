@@ -7,7 +7,9 @@
 * Step3: サービスを利用する（@Injectableの利用）
 * Step4: コンポーネント化する（@Input/@Outputの利用）
 
-`src/components`の各ステップ中にあるtemplateディレクトリがハンズオンを行うファイルです。完成したファイルは各ステップ中のanswerディレクトリにあります。これらは`scripts/main.ts`にある`bootstrap`を変更することでいつでも見ることができます。
+ハンズオンのコメントは各ステップの中の`readme.md`に書かれています。参照しながら進めてください。
+
+また、`src/components`の各ステップ中にあるtemplateディレクトリがハンズオンを行うファイルです。完成したファイルは各ステップ中のanswerディレクトリにあります。これらは`scripts/main.ts`にある`bootstrap`を変更することでいつでも見ることができます。
 
 ファイル構成は次の通り：
 
