@@ -32,22 +32,22 @@ export class ServiceTemplate
   private todos: Todo[];
 
   constructor (
-    // TODO TodoStoreをインジェクションします
+    // TODO: 1. TodoStoreをインジェクションします
     
   ) {}
 
   ngOnInit(): void {
-    // todo及びtodosを初期化します
+    // TODO: 2. todo及びtodosを初期化します
 
   }
 
   public onSubmit(): void {
-    // TODO: todoをtodoStoreに保存し、todoを初期化します
+    // TODO: 3. todoをtodoStoreに保存し、todoを初期化します
     
   }
 
   public onDelete(index: number): void {
-    // TODO: todoStoreから該当する行番号(index)でデータを削除します
+    // TODO: 4. todoStoreから該当する行番号(index)でデータを削除します
     
   }
 }

@@ -12,19 +12,16 @@ import {TodoStore, Todo} from '../../../shared';
       <button (click)="onClick($event)">削除</button>
     </div>
     `,
-  styles: [] // TODO必要なCSSを定義します
+  styles: [] // TODO: 8. detailに必要なCSSを定義します
 })
 export class TodosDetailComponent {
-  @Input('list-no')
-  private listNo: number;
-
-  @Input('todo-data')
-  private todo: Todo;
-
-  @Output('on-delete')
-  private onDelete = new EventEmitter();
+  // TODO: 9. @Inputと@Outputを定義します
+  // @Input -> list-no: listNo
+  // @Input -> todo-data: todo
+  // @Output -> on-delete: onDelete
   
   public onClick($event: any): void {
-    this.onDelete.emit($event);
+    // TODO: 10. emitを実行します
+
   }
 }

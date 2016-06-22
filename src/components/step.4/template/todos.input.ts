@@ -11,7 +11,7 @@ import {TodoStore, Todo} from '../../../shared';
       <button type=submit [disabled]="!todoForm.form.valid">登録</button>
     </form>
   `,
-  styles: []  // TODO必要なCSSを定義します
+  styles: []  // TODO: 11. 必要なCSSを定義します
 })
 export class TodosInputComponent
   implements OnInit {
@@ -19,17 +19,17 @@ export class TodosInputComponent
   private todo: Todo;
   
   constructor (
-    // TODO: TodoStoreをインジェクションします
+    // TODO: 12. TodoStoreをインジェクションします
     
   ) {}
 
   ngOnInit(): void {
-    // TODO: todoを初期化します
+    // TODO: 13. todoを初期化します
     
   }
 
   public onSubmit(): void {
-    // TODO: todoをtodoStoreに保存し、todoを初期化します
+    // TODO: 14. todoをtodoStoreに保存し、todoを初期化します
     
   }
 }

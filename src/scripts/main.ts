@@ -18,4 +18,4 @@ import {TodosTemplate} from '../components';
 
 enableProdMode();
 
-bootstrap(TodosTemplate);
+bootstrap(TodosComponent);
