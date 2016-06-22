@@ -1,6 +1,6 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
 
-import {TodoStore, Todo} from '../../shared';
+import {TodoStore, Todo} from '../../../shared';
 
 @Component({
   selector: 'todos-detail',
@@ -12,32 +12,7 @@ import {TodoStore, Todo} from '../../shared';
       <button (click)="onClick($event)">削除</button>
     </div>
     `,
-  styles: [
-    `:host {
-      display: block;
-      border:#4e5d5f solid 2px;
-      margin: 5px 0 5px 0;
-      padding: 5px 0 5px 0;
-      width: 100%;
-      min-height: 112px;
-      overflow : hidden;
-    }`,
-    `.list-no {
-      text-align: center;
-      font-size: 2rem;
-      margin: 5px 5px 5px 5px;
-      width: 100px;
-      height: 100px;
-      background-color: #4e5d5f;
-      color: #ffffff;
-    }`,
-    `div {
-      float: left;
-    }`,
-    `button {
-      background-color: #e8345a;
-    }`
-  ]
+  styles: [] // TODO必要なCSSを定義します
 })
 export class TodosDetailComponent {
   @Input('list-no')

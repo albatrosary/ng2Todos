@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import {TodosDetailComponent} from './todos.detail'; 
 
-import {TodoStore, Todo} from '../../shared';
+import {TodoStore, Todo} from '../../../shared';
 
 @Component({
   selector: 'todos-body',
@@ -22,14 +22,17 @@ export class TodosBodyComponent
   private todos: Todo[];
 
   constructor (
-    private todoStore: TodoStore
+    // TODO: TodoStoreをインジェクションします
+
   ) {}
 
   public ngOnInit () {
-    this.todos = this.todoStore.list;
+    // TODO: TodoStoreからTodosを取得します
+    
   }
 
   public onDelete(index: number): void {
-    this.todoStore.delete(index);
+    // TODO: todoStoreから該当する行番号(index)でデータを削除します
+    
   }
 }

@@ -27,27 +27,26 @@ class Todo {
     `,
     styleUrls: ['components/step.2/app.css']
 })
-export class AppComponent
+export class AppTemplate
   implements OnInit {
 
   private todo: Todo;
   private todos: Todo[];
 
-  constructor () {
-    this.todo = new Todo;
-    this.todos = [];
-  }
+  constructor () {}
 
   ngOnInit(): void {
-    this.todo = new Todo;
+    // TODO: todo及びtodosの初期化を行います
+
   }
 
   public onSubmit(): void {
-    this.todos.push(this.todo);
-    this.todo = new Todo;
+    // TODO: todoをtodosに保存し、todoを初期化します
+
   }
 
   public onDelete(index: number): void {
-    this.todos.splice(index, 1);
+    // TODO: todosから該当する行番号(index)でデータを削除します
+
   }
 }
