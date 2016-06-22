@@ -24,12 +24,11 @@ bootstrap(AppTemplate);
 components/step.2/template/app.ts
 ```
 
-を変更してください。TODOは次の通りです：
+を変更してください。このTodosアプリケーションは次の３つの動きを行います：
 
 1. todo及びtodosの初期化を行います
 2. todoをtodosに保存し、todoを初期化します
 3. todosから該当する行番号(index)でデータを削除します
-
 
 ### 注意
 
