@@ -2,7 +2,7 @@
 
 このリポジトリはAngular2を利用して簡素なTodosアプリケーションを作るためのものです。構成としては次の通り
 
-* Step1: 準備（Hello World的な）
+* Step1: [準備（Hello World的な）](src/components/step.1)
 * Step2: Todosアプリを作ってみる
 * Step3: サービスを利用する（@Injectableの利用）
 * Step4: コンポーネント化する（@Input/@Outputの利用）
