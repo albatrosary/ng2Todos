@@ -1,6 +1,12 @@
 # 準備（Hello World的な）
 
-ハンズオンを始める準備をします。
+ハンズオンを始める準備をします。このハンズオン対象者は
+
+* Hello Worldから抜け出したい人
+* Node.jsがインストール済みで、ちょっとはnpmを触ったことがある人
+* 何とかいろいろ頑張れるだろう気持ちがある人
+
+です。
 
 Step.1ではハンズオンリポジトリをcloneし`npm start`でAngular2の実行確認をします。`scripts/main.ts`にある`bootstrap()`でHomeComponentを呼び出します。
 
