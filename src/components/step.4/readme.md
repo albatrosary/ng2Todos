@@ -38,31 +38,22 @@ components/step.4/template/todos.input.ts
 
 を変更してください。TODOは次の通りです：
 
-
-todos.ts
-
 1. todos.inputを呼び出します
 2. todos.bodyを呼び出します
 3. 利用するコンポーネントを登録します
 4. TodoStoreをプロバイダーとして登録します
-
-
-todos.body.ts
-
 5. TodoStoreをインジェクションします
 6. TodoStoreからTodosを取得します
 7. todoStoreから該当する行番号(index)でデータを削除します
-
-todos.detail.ts
-
 8. detailに必要なCSSを定義します
 9. @Inputと@Outputを定義します
 10. emitを実行します
-
-todos.input.ts
-
 11. 必要なCSSを定義します
 12. TodoStoreをインジェクションします
 13. todoを初期化します
 14. todoをtodoStoreに保存し、todoを初期化します
 
+* todos.ts(1-4)
+* todos.body.ts(5-7)
+* todos.detail.ts(8-10)
+* todos.input.ts(11-14)
