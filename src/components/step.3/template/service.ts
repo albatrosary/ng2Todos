@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
-import {TodoStore, Todo} from '../../../shared';
+// TODO: 1. TodoStore及びTodoをインポートします
+
 
 @Component({
   selector: 'my-app',
@@ -23,7 +24,7 @@ import {TodoStore, Todo} from '../../../shared';
     </div>
     `,
     styleUrls: ['components/step.2/app.css'],
-    providers: [TodoStore]
+    providers: [] // TODO: 2. TodoStoreをプロバイダー登録します
 })
 export class ServiceTemplate
   implements OnInit {
@@ -32,22 +33,22 @@ export class ServiceTemplate
   private todos: Todo[];
 
   constructor (
-    // TODO: 1. TodoStoreをインジェクションします
+    // TODO: 3. TodoStoreをインジェクションします
     
   ) {}
 
   ngOnInit(): void {
-    // TODO: 2. todo及びtodosを初期化します
+    // TODO: 4. todo及びtodosを初期化します
 
   }
 
   public onSubmit(): void {
-    // TODO: 3. todoをtodoStoreに保存し、todoを初期化します
+    // TODO: 5. todoをtodoStoreに保存し、todoを初期化します
     
   }
 
   public onDelete(index: number): void {
-    // TODO: 4. todoStoreから該当する行番号(index)でデータを削除します
+    // TODO: 6. todoStoreから該当する行番号(index)でデータを削除します
     
   }
 }
