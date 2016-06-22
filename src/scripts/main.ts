@@ -11,10 +11,12 @@ import {AppComponent} from '../components'
 // Step.3
 import {ServiceComponent} from '../components'
 
+// Step.4
+import {TodosComponent} from '../components'
 
 enableProdMode();
 
-bootstrap(ServiceComponent, [
+bootstrap(TodosComponent, [
   disableDeprecatedForms(),
   provideForms()
 ]);
