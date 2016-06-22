@@ -8,7 +8,16 @@ Step.4ではStep3で作成したコードをさらにコンポーネント化し
 bootstrap(TodosComponent);
 ```
 
-`components/step.3/template/service.js`を見るとコードが確認できます。サービスは、TodoStoreクラスとTodoクラスを定義しsharedフォルダへ移してます。
+コンポーネント化されたコードは
+
+```bash
+components/step.4/answer/todos.ts
+components/step.4/answer/todos.body.ts
+components/step.4/answer/todos.detail.ts
+components/step.4/answer/todos.input.ts
+```
+
+で確認できます。
 
 ### ハンズオン
 
@@ -18,7 +27,7 @@ bootstrap(TodosComponent);
 bootstrap(ServiceTemplate);
 ```
 
-コードが書かれていないためエラーが発生しますが、コード上の`TODO`と書かれている部分を追加していくことでアプリケーションを完成することができます。コードは
+コードが書かれていないためエラーが発生しますが、コードの中にある`TODO`と書かれている部分を追加していくことでアプリケーションを完成することができます。コードは
 
 ```bash
 components/step.4/template/todos.ts

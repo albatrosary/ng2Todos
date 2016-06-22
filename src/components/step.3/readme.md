@@ -18,7 +18,7 @@ bootstrap(ServiceComponent);
 bootstrap(ServiceTemplate);
 ```
 
-コードが書かれていないためエラーが発生しますが、コード上の`TODO`と書かれている部分を追加していくことでアプリケーションを完成することができます。コードは
+コードが書かれていないためエラーが発生しますが、コードの中にある`TODO`と書かれている部分を追加していくことでアプリケーションを完成することができます。コードは
 
 ```bash
 components/step.3/template/service.js
