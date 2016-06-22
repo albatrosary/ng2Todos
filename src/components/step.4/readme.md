@@ -36,7 +36,7 @@ components/step.4/template/todos.detail.ts
 components/step.4/template/todos.input.ts
 ```
 
-を変更してください。TODOは次の通りです：
+を変更してください。各TODOは次のような内容になっています：
 
 1. todos.inputを呼び出します
 2. todos.bodyを呼び出します

@@ -24,7 +24,7 @@ bootstrap(ServiceTemplate);
 components/step.3/template/service.ts
 ```
 
-を変更してください。TODOは次の通りです：
+を変更してください。各TODOは次のような内容になっています：
 
 1. TodoStore及びTodoをインポートします
 2. TodoStoreをプロバイダー登録します
