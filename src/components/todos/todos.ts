@@ -12,7 +12,10 @@ import {TodoStore} from './shared';
     <todos-input></todos-input>
     <todos-body></todos-body>
   `,
-  directives: [TodosInputComponent, TodosBodyComponent],
+  directives: [
+    TodosInputComponent,
+    TodosBodyComponent
+  ],
   providers: [TodoStore]
 })
 export class TodosComponent {}

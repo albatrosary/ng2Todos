@@ -9,4 +9,4 @@ enableProdMode();
 bootstrap(TodosComponent, [
   disableDeprecatedForms(),
   provideForms()
-])
+]);

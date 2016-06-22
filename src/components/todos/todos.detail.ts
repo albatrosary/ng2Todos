@@ -20,8 +20,7 @@ import {Todo} from './shared'
       width: 100%;
       min-height: 112px;
       overflow : hidden;
-    }`
-    ,
+    }`,
     `.list-no {
       text-align: center;
       font-size: 2rem;
@@ -49,7 +48,7 @@ export class TodosDetailComponent {
   @Output('on-delete')
   private onDelete = new EventEmitter();
   
-  public onClick($event): void {
+  public onClick($event: any): void {
     this.onDelete.emit($event);
   }
 }

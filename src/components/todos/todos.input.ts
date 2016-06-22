@@ -10,9 +10,8 @@ import {TodoStore, Todo} from './shared';
       <textarea [(ngModel)]="todo.desc" name="desc" required placeholder="desc"></textarea>
       <button type=submit [disabled]="!todoForm.form.valid">登録</button>
     </form>
-    `,
-  styles: [
-    `
+  `,
+  styles: [`
     input {
       width: 100%;
     }
@@ -22,17 +21,20 @@ import {TodoStore, Todo} from './shared';
     }
   `]
 })
-export class TodosInputComponent implements OnInit {
+export class TodosInputComponent
+  implements OnInit {
 
   private todo: Todo;
   
-  constructor (private todoStore: TodoStore) {}
+  constructor (
+    private todoStore: TodoStore
+  ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.todo = new Todo;
   }
 
-  public onClick() {
+  public onClick(): void {
     this.todoStore.add(this.todo);
     this.todo = new Todo;
   }
