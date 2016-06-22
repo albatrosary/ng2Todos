@@ -8,7 +8,7 @@ Step.3ではStep2で作成したコードにサービスを追加します（こ
 bootstrap(ServiceComponent);
 ```
 
-`components/step.3/template/service.js`を見るとコードが確認できます。サービスは、TodoStoreクラスとTodoクラスを定義しsharedフォルダへ移してます。
+`components/step.3/template/service.ts`を見るとコードが確認できます。サービスは、TodoStoreクラスとTodoクラスを定義しsharedフォルダへ移してます。
 
 ### ハンズオン
 
@@ -21,7 +21,7 @@ bootstrap(ServiceTemplate);
 コードが書かれていないためエラーが発生しますが、コードの中にある`TODO`と書かれている部分を追加していくことでアプリケーションを完成することができます。コードは
 
 ```bash
-components/step.3/template/service.js
+components/step.3/template/service.ts
 ```
 
 を変更してください。TODOは次の通りです：
@@ -33,3 +33,5 @@ components/step.3/template/service.js
 5. todoをtodoStoreに保存し、todoを初期化します
 6. todoStoreから該当する行番号(index)でデータを削除します
 
+
+[次のステップ](../step.4)
