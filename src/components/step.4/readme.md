@@ -53,6 +53,7 @@ components/step.4/template/todos.input.ts
 13. todoを初期化します
 14. todoをtodoStoreに保存し、todoを初期化します
 
+
 * todos.ts(1-4)
 * todos.body.ts(5-7)
 * todos.detail.ts(8-10)
