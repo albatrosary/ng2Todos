@@ -11,3 +11,5 @@ bootstrap(HomeComponent);
 ブラウザが起動し`My First Angular 2 App`が表示されます。このコードは`components/step.1/home.ts`にあります。
 
 通常のプロジェクトではいろいろな人が作っているStarter Kitか[Angular2 CLI](https://cli.angular.io/)、YEOMANなどを利用することで簡単にプロジェクトを開始することが可能です。
+
+[次のステップ](./step.2)
