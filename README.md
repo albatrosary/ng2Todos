@@ -9,7 +9,6 @@
 
 `src/components`の各ステップ中にあるtemplateディレクトリがハンズオンを行うファイルです。完成したファイルは各ステップ中のanswerディレクトリにあります。これらは`scripts/main.ts`にある`bootstrap`を変更することでいつでも見ることができます。
 
-
 ファイル構成は次の通り：
 
 ```bash
@@ -21,13 +20,13 @@
 ├── src
 │   ├── components
 │   │   ├── index.ts
-│   │   ├── step.1
-│   │   ├── step.2
-│   │   ├── step.3
-│   │   └── step.4
+│   │   ├── step.1 <- 準備（Hello World的な）
+│   │   ├── step.2 <- Todosアプリを作ってみる
+│   │   ├── step.3 <- サービスを利用する（@Injectableの利用）
+│   │   └── step.4 <- コンポーネント化する（@Input/@Outputの利用）
 │   ├── index.html
 │   ├── scripts
-│   │   └── main.ts
+│   │   └── main.ts <- 呼び出すコンポーネントを切り替えます
 │   ├── shared
 │   │   ├── index.ts
 │   │   ├── todo.store.ts
