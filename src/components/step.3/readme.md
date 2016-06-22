@@ -33,5 +33,6 @@ components/step.3/template/service.ts
 5. todoをtodoStoreに保存し、todoを初期化します
 6. todoStoreから該当する行番号(index)でデータを削除します
 
+尚、このステップでコンポーネントが利用しているCSSはStep2のものを、そのまま使っています。
 
 [次のステップ](../step.4)
