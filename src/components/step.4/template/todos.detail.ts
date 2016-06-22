@@ -16,9 +16,9 @@ import {TodoStore, Todo} from '../../../shared';
 })
 export class TodosDetailComponent {
   // TODO: 9. @Inputと@Outputを定義します
-  // @Input -> list-no: listNo
-  // @Input -> todo-data: todo
-  // @Output -> on-delete: onDelete
+  // (1) @Input: list-no -> listNo
+  // (2) @Input: todo-data -> todo
+  // (3) @Output: on-delete <- onDelete
   
   public onClick($event: any): void {
     // TODO: 10. emitを実行します
