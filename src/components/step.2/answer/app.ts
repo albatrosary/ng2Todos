@@ -31,13 +31,11 @@ export class AppComponent
   private todo: Todo;
   private todos: Todo[];
 
-  constructor () {
-    this.todo = new Todo;
-    this.todos = [];
-  }
+  constructor () {}
 
   ngOnInit(): void {
     this.todo = new Todo;
+    this.todos = [];
   }
 
   public onSubmit(): void {
